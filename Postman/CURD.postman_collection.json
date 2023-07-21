@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "fb57fece-3948-4dde-835c-cc7b33652b7e",
+		"name": "CURD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28568026",
+		"_collection_link": "https://www.postman.com/kamesh03/workspace/crud/collection/28568026-fb57fece-3948-4dde-835c-cc7b33652b7e?action=share&creator=28568026&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "name=KAMESH&Department=ITT",
+					"options": {
+						"raw": {
+							"language": "html"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/delete?id=4u3c21P8dWIObcOx9CLk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4u3c21P8dWIObcOx9CLk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"apple\",\r\n    \"Department\" : \"orange\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/edit?id=bxEpoooS13qOjVl21qab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"edit"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "bxEpoooS13qOjVl21qab"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
